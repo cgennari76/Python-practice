@@ -26,10 +26,8 @@ class Deck(Card):
         self.new_deck.remove(card)
 
 class Game:
-    def zonedesk():
+    def carddesk():
         d = Deck()
-        #d.deck()
-        #d.loop()
         c1 = d.new_card()
         d.remove_card(c1)
         c2 = d.new_card()
@@ -38,4 +36,4 @@ class Game:
         print(len(d.new_deck))
 
 g = Game
-g.zonedesk()
+g.carddesk()
