@@ -24,16 +24,24 @@ class Deck(Card):
     
     def remove_card(self,card):
         self.new_deck.remove(card)
+    
+    def add_gathering(self,card):
+        self.new_deck.append(card)
 
 class Game:
     def carddesk():
         d = Deck()
+        #d.deck()
+        #d.loop()
         c1 = d.new_card()
         d.remove_card(c1)
         c2 = d.new_card()
         d.remove_card(c2)
+        d.add_gathering("Investigator journal of biolume")
         print(str(c1) + " and " + str(c2))
         print(len(d.new_deck))
+        #print(str(_____________)
+        print(str(d.new_deck))
 
 g = Game
 g.carddesk()
