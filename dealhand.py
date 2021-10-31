@@ -31,8 +31,6 @@ class Deck(Card):
 class Game:
     def carddesk():
         d = Deck()
-        #d.deck()
-        #d.loop()
         c1 = d.new_card()
         d.remove_card(c1)
         c2 = d.new_card()
@@ -40,7 +38,6 @@ class Game:
         d.add_gathering("Investigator journal of biolume")
         print(str(c1) + " and " + str(c2))
         print(len(d.new_deck))
-        #print(str(_____________)
         print(str(d.new_deck))
 
 g = Game
